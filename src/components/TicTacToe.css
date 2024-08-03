@@ -1,0 +1,71 @@
+body{
+  background-color: #b6af26b0;
+}
+
+/* Contenedor principal del juego */
+.tic-tac-toe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  margin-top: 120px;
+  
+}
+
+/* Contenedor del tablero con relación de aspecto cuadrada */
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea una cuadrícula de 3 columnas, cada una ocupando un fracción igual del espacio disponible */
+  gap: 5px; /* Espacio entre los cuadrados */
+  width: 300px; /* Ancho total del tablero */
+  height: 300px; /* Alto total del tablero */
+}
+
+/* Cada cuadrado en el tablero */
+.cuadrado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: #f0f0f0a9;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Los siguientes dos estilos aseguran que cada cuadrado mantenga una relación de aspecto 1:1 */
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+/* Cambia el color del fondo cuando se pasa el ratón por encima */
+.cuadrado:hover {
+  background-color: #ddd;
+}
+
+/* Estilo para la información del juego */
+.info {
+  margin: 50px 110px 30px 150px;
+  text-align: center;
+}
+
+/* Estilo para el botón de reinicio */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ff5e00;
+  color: rgb(5, 5, 5);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left: 45px;
+}
+
+
+button:hover {
+  background-color: #b5ad18;
+}
+.fila{
+  margin: -5px;
+}
